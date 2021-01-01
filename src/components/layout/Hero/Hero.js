@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Hero.scss';
 import PropTypes from 'prop-types';
 
+
 const Hero = ({variant = '', titleText, imageSrc, ...otherProps}) => (
   <div {...otherProps} className={styles.component + variant.split(' ').map(name => ' ' + (styles[name] || name)).join('')}>
     <h2 className={styles.title}>{titleText}</h2>
@@ -9,10 +10,15 @@ const Hero = ({variant = '', titleText, imageSrc, ...otherProps}) => (
   </div>
 );
 
+
+Hero.defaultProps = {
+  imageSrc: 'image.jpg',
+};
+
 Hero.propTypes = {
   variant: PropTypes.string,
   titleText: PropTypes.node.isRequired,
-  imageSrc: PropTypes.string,
+  imageSrc: PropTypes.string.isRequired,
 };
 
 export default Hero;
