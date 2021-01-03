@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import {shallow} from 'enzyme';
 import Hero from './Hero';
 //test czy props zwraca jakieś text  toBeTruthy -czy component zwraca jakąś prawdziwą wartość
@@ -45,4 +45,3 @@ describe('Component Hero', () => {
   });
 
 });
-*/

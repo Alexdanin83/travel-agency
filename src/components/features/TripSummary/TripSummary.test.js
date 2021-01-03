@@ -82,10 +82,9 @@ describe('Component TripSummary', () => {
         days={1} />
     );
     expect(component.hasClass('tags')).toBe(false);
-    console.log(component.debug());
+    //console.log(component.debug());
 
   });
-
 
 
 });
