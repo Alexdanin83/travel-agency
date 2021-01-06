@@ -20,7 +20,7 @@ describe('Component TripSummary', () => {
     expect(renderedLink).toEqual(expectedLink);
     expect(component.find('img').prop('src')).toEqual(expectedImageSrc);
     expect(component.find('img').prop('alt')).toEqual(expectedImageAlt);
-    //console.log(component.debug());
+    console.log(component.debug());
   });
 
   it('should throw error without required props', () => {
@@ -47,8 +47,7 @@ describe('Component TripSummary', () => {
     expect(renderedCost).toEqual(`from ${expectedCost}`);
     expect(renderedDays).toEqual(`${expectedDays} days`);
 
-
-    //console.log(component.debug());
+    console.log(component.debug());
   });
 
   it('should render correct tags', () => {
@@ -69,7 +68,7 @@ describe('Component TripSummary', () => {
     expect(renderedTags2).toEqual(expectedTags[1]);
     expect(renderedTags3).toEqual(expectedTags[2]);
 
-    //console.log(component.debug());
+    console.log(component.debug());
   });
   it('should not render tags if props tags is false', () => {
     const component = shallow(
@@ -82,7 +81,7 @@ describe('Component TripSummary', () => {
         days={1} />
     );
     expect(component.hasClass('tags')).toBe(false);
-    //console.log(component.debug());
+    console.log(component.debug());
 
   });
 
