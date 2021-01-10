@@ -64,6 +64,7 @@ const checkDescriptionAtTime = (time, expectedDescription) => {
   });
 };
 
+
 const checkDescriptionAfterTime = (time, delaySeconds, expectedDescription) => {
   it(`should show correct value ${delaySeconds} seconds after ${time}`, () => {
     jest.useFakeTimers();

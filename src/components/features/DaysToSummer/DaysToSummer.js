@@ -1,9 +1,6 @@
 import React from 'react';
 import styles from './DaysToSummer.scss';
 
-
-
-
 class DaysToSummer extends React.Component {
   constructor() {
     super();
@@ -33,7 +30,6 @@ class DaysToSummer extends React.Component {
     return (
       <div className={styles.component}>
         <h3 className={styles.title}>{countDown}</h3>
-
       </div>
     );
   }
